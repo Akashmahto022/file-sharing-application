@@ -9,7 +9,7 @@ import os
 # Create your models here.
 
 class Folder(models.Model):
-    uid = models.UUIDField(primary_key=True, editable=False, default=uuid4.uuid)
+    uid = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     created_at = models.DateField(auto_now=True)
     
 
