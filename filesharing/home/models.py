@@ -1,12 +1,11 @@
 from pyexpat import model
 from statistics import mode
-from uuid import uuid4
 from django.db import models
 import uuid
 import os
 
 
-# Create your models here.
+# Create your models here. 
 
 class Folder(models.Model):
     uid = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
@@ -23,6 +22,7 @@ class Files(models.Model):
     file = models.FileField(upload_to=get_upload_path)
     created_at = models.DateField(auto_now=True)
     
+
 
 
     
